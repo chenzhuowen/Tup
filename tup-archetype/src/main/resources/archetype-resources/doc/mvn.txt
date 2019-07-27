@@ -1,0 +1,4 @@
+mvn archetype:generate "-DarchetypeGroupId=com.chenzw" "-DarchetypeArtifactId=tup-archetype" "-DarchetypeVersion=1.0.0" "-DgroupId=com.host" "-DartifactId=demo" "-Dversion=1.0.0"
+
+
+mvn archetype:generate -X "-DarchetypeGroupId=com.chenzw" "-DarchetypeArtifactId=tup-archetype" "-DarchetypeVersion=1.0.0" "-DgroupId=com.host" "-DartifactId=demo" "-Dversion=1.0.0"s
