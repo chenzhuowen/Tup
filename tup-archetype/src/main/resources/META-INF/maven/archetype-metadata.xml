@@ -36,7 +36,14 @@
                     </includes>
                     <excludes>
                         <exclude>pom.xml</exclude>
+                        <exclude>package.json</exclude>
                     </excludes>
+                </fileSet>
+                <fileSet filtered="true" encoding="UTF-8">
+                    <directory>/</directory>
+                    <includes>
+                        <include>package.json</include>
+                    </includes>
                 </fileSet>
             </fileSets>
         </module>

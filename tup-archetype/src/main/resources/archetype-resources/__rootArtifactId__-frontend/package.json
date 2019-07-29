@@ -1,6 +1,6 @@
 {
-  "name": "printphoto",
-  "version": "0.1.0",
+  "name": "${rootArtifactId}",
+  "version": "${version}",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
