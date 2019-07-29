@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>${rootArtifactId}-backend</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>${rootArtifactId}-backend</name>
     <description>${rootArtifactId}-backend powered by Tup</description>
@@ -22,12 +22,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--        war包方式-->
-        <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-tomcat</artifactId>-->
-        <!--            <scope>provided</scope>-->
-        <!--        </dependency>-->
+        <!--war包方式-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-devtools</artifactId>

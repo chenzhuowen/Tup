@@ -9,27 +9,8 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 /**
  * jar包方式
  */
-@SpringBootApplication
-public class DemoApplication {
-
-    //启动一个项目
-    public static void main(String[] args) {
-        SpringApplication.run(DemoApplication.class, args);
-    }
-
-}
-
-
-/**
- * war包方式
- */
 //@SpringBootApplication
-//public class DemoApplication extends SpringBootServletInitializer {
-//
-//    @Override
-//    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-//        return builder.sources(DemoApplication.class);
-//    }
+//public class DemoApplication {
 //
 //    //启动一个项目
 //    public static void main(String[] args) {
@@ -37,5 +18,24 @@ public class DemoApplication {
 //    }
 //
 //}
+
+
+/**
+ * war包方式
+ */
+@SpringBootApplication
+public class DemoApplication extends SpringBootServletInitializer {
+
+    @Override
+    protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+        return builder.sources(DemoApplication.class);
+    }
+
+    //启动一个项目
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
+
+}
 
 

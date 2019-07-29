@@ -9,7 +9,7 @@
     </parent>
 
     <artifactId>${rootArtifactId}-merger</artifactId>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>${rootArtifactId}-merger</name>
     <description>${rootArtifactId}-merger project powered by Tup</description>
